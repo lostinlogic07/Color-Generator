@@ -1,29 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Generator</title>
+
+    <title>Color Studio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
 
-        <h1>Color Generator</h1>
+    <main class="container">
 
-        <p>Your color is:</p>
+        <p class="label">COLOR GENERATOR</p>
 
-        <h2 id="colorCode">#FFFFFF</h2>
+        <h1>Color Studio</h1>
 
-        <button id="generateBtn">Generate Color</button>
+        <p class="subtitle">
+            Generate, explore and copy random colors.
+        </p>
 
-        <button id="copyBtn">Copy Color</button>
 
-    </div>
+        <section class="color-card">
+
+            <div class="color-preview" id="colorPreview"></div>
+
+            <div class="color-information">
+
+                <h2 id="colorCode">#FFFFFF</h2>
+
+                <p id="rgbValue">
+                    RGB: 255, 255, 255
+                </p>
+
+                <p id="hslValue">
+                    HSL: 0°, 0%, 100%
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <div class="buttons">
+
+            <button id="generateBtn">
+                Generate Color
+            </button>
+
+            <button id="copyBtn">
+                Copy HEX
+            </button>
+
+        </div>
+
+
+        <p class="message" id="message">
+            Click "Generate Color" to begin.
+        </p>
+
+
+        <section class="history-section">
+
+            <h3>Recent Colors</h3>
+
+            <div class="history" id="history"></div>
+
+        </section>
+
+    </main>
+
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
